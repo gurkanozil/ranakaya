@@ -28,7 +28,7 @@ const Skills = () => {
                 <span
                   key={skill}
                   className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-medium"
-                >test skill map
+                >
                   {skill}
                 </span>
               ))}

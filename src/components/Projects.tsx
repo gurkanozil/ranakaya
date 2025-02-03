@@ -4,18 +4,18 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-commerce Platform',
+      title: 'Portfolio website',
       description: 'A full-featured e-commerce platform built with React and Node.js',
-      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&h=400',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      github: '#',
-      live: '#',
+      image: '#',
+      tech: ['Figma', 'React'],
+      github: 'https://github.com/gurkanozil/ranakaya',
+      live: 'https://gurkanozil.github.io/ranakaya',
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates',
-      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&h=400',
-      tech: ['Vue.js', 'Firebase', 'Tailwind'],
+      title: '#',
+      description: '#',
+      image: '#',
+      tech: ['#'],
       github: '#',
       live: '#',
     },
