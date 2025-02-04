@@ -24,7 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <img
           src="images/ranaheadshot.jpeg"
           alt="Profile"
-          className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mb-4"
+          className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mb-4 transition-transform transform hover:scale-110"
         />
         <h1 className="text-xl font-bold text-gray-800">Rana Kaya</h1>
         <p className="text-gray-600">Digital Designer</p>
