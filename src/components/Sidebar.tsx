@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Mail, Linkedin } from 'lucide-react';
+import profileImage from '../images/ranaheadshot.jpeg';  
 
 interface NavItem {
   id: string;
@@ -22,7 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     <aside className="fixed left-0 top-0 h-screen w-72 bg-blue-50 p-6 flex flex-col">
       <div className="flex flex-col items-center mb-8">
         <img
-          src="images/ranaheadshot.jpeg"
+          src={profileImage}
           alt="Profile"
           className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mb-4 transition-transform transform hover:scale-110"
         />
