@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
@@ -11,7 +10,7 @@ const Contact = () => {
             <Mail className="text-blue-600" size={24} />
             <div>
               <h3 className="font-medium text-gray-800">Email</h3>
-              <p className="text-gray-600">rana.kaya@example.com</p>
+              <p className="text-gray-600">rana.kaya@voorbeeld.be</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -25,7 +24,7 @@ const Contact = () => {
             <MapPin className="text-blue-600" size={24} />
             <div>
               <h3 className="font-medium text-gray-800">Location</h3>
-              <p className="text-gray-600">Lommel Belgium</p>
+              <p className="text-gray-600">Lommel, Belgium</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Github, Mail, Linkedin, User, Code2, FolderKanban, Contact as ContactIcon } from 'lucide-react';
+import { useState } from 'react';
+import { User, Code2, FolderKanban, Contact as ContactIcon } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -10,10 +10,10 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   const navItems = [
-    { id: 'about', label: 'About', icon: <User size={20} /> },
-    { id: 'skills', label: 'Skills', icon: <Code2 size={20} /> },
-    { id: 'projects', label: 'Projects', icon: <FolderKanban size={20} /> },
-    { id: 'contact', label: 'Contact', icon: <ContactIcon size={20} /> },
+    { id: 'about', label: 'About', icon: <User size={32} /> },
+    { id: 'skills', label: 'Skills', icon: <Code2 size={32} /> },
+    { id: 'projects', label: 'Projects', icon: <FolderKanban size={32} /> },
+    { id: 'contact', label: 'Contact', icon: <ContactIcon size={32} /> },
   ];
 
   const renderContent = () => {
@@ -38,7 +38,7 @@ function App() {
         setActiveSection={setActiveSection}
         navItems={navItems}
       />
-      <main className="flex-1 p-8 ml-72">
+      <main className="flex-1 p-12">
         {renderContent()}
       </main>
     </div>
