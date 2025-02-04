@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Portfolio website',
-      description: 'A portfolio prototype built with React and Node.js',
+      description: 'My portfolio website',
       image: '#',
       tech: ['Figma', 'React'],
       github: 'https://github.com/gurkanozil/ranakaya',
