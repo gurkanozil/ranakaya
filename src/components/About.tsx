@@ -1,10 +1,9 @@
 const About = () => {
   return (
     <div className="mt-6 max-w-4xl">
-      <h1 className="text-6xl font-extrabold text-[72px] text-pink-500">KAYA</h1>
-      <h1 className="text-6xl font-extrabold text-[100px] text-pink-500">RANA</h1>
-      <p className="text-xl font-bold text-gray-600 mb-10">Digital Designer</p>
-      <h2 className="text-6xl font-bold  text-pink-500 mb-6">About Me</h2>
+      <h1 className="text-8xl font-extrabold  text-pink-500">KAYA</h1>
+      <h1 className="text-9xl font-extrabold  text-pink-500">RANA</h1>
+      <p className="text-2xl text-gray-600 mb-10">DIGITAL DESIGNER</p>
       <div className="prose prose-lg text-gray-600">
         <p className="text-xl font-bold mb-4">
           Hi, I’m Rana Kaya! Born and raised in Lommel, Belgium, I’ve had a

@@ -1,38 +1,39 @@
 import { Github, ExternalLink } from 'lucide-react';
+import webpageScreenshot from '../images/webpage_screenshot.png';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Portfolio website',
       description: 'My portfolio website',
-      image: '#',
+      image: webpageScreenshot,
       tech: ['Figma', 'React'],
       github: 'https://github.com/gurkanozil/ranakaya',
       live: 'https://gurkanozil.github.io/ranakaya',
     },
-    {
-      title: '#',
-      description: '#',
-      image: '#',
-      tech: ['#'],
-      github: '#',
-      live: '#',
-    },
+    //{
+    //  title: 'empty',
+    //  description: '#',
+    //  image: '#',
+    //  tech: ['#'],
+    //  github: '#',
+    //  live: '#',
+    //},
   ];
 
   return (
     <div className="max-w-4xl">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Projects</h2>
+      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">PROJECTS</h2>
       <div className="grid gap-8">
         {projects.map((project) => (
-          <div key={project.title} className="bg-white rounded-xl shadow-sm overflow-hidden">
+          <div key={project.title} className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+              <h3 className="text-xl font-bold text-pink-500 mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (

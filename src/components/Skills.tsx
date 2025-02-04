@@ -1,26 +1,26 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Soft Skills',
+      title: 'SOFT SKILLS',
       skills: ['Creativity', 'Teamwork', 'Precise', 'Helpful'],
     },
     {
-      title: 'Hard Skills',
+      title: 'HARD SKILLS',
       skills: ['Photoshop', 'Illustrator', 'Figma', 'Office', 'HTML', 'CSS'],
     },
     {
-      title: 'Languages',
+      title: 'LANGUAGES',
       skills: ['Dutch', 'Turkish', 'English', 'French'],
     },
   ];
 
   return (
     <div className="max-w-3xl">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Skills</h2>
+      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">SKILLS</h2>
       <div className="grid gap-8">
         {skillCategories.map((category) => (
           <div key={category.title}>
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">{category.title}</h3>
+            <h3 className="text-2xl font-bold text-pink-500 mb-4">{category.title}</h3>
             <div className="flex flex-wrap gap-3">
               {category.skills.map((skill) => (
                 <span
