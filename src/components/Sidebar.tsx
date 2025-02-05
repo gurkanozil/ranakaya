@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, Phone, Instagram, Facebook } from 'lucide-react';
 import profileImage from '../images/ranaheadshot.jpeg';  
 
 interface NavItem {
@@ -52,24 +52,21 @@ const Sidebar: React.FC<SidebarProps> = ({
       </nav>
 
       <div className="flex justify-center space-x-4 pt-6 border-t border-blue-100">
-        <a
-          href="#"
+        <a href="mailto:ranakaya@voorbeeld.be"
           className="text-gray-600 hover:text-blue-700 transition-colors"
-        >
-          <Github size={32} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rana-kaya-64aaa5333/"
+        ><Mail size={32} /></a>
+        <a href="tel:+32 123-4567"
           className="text-gray-600 hover:text-blue-700 transition-colors"
-        >
-          <Linkedin size={32} />
-        </a>
-        <a
-          href="#"
+        ><Phone size={32} /></a>
+        <a href="https://www.facebook.com/yuna.shin.3975"
           className="text-gray-600 hover:text-blue-700 transition-colors"
-        >
-          <Mail size={32} />
-        </a>
+        ><Facebook size={32} /></a>
+        <a href="https://www.instagram.com/kayaaranaa/"
+          className="text-gray-600 hover:text-blue-700 transition-colors"
+        ><Instagram size={32} /></a>
+        <a href="https://www.linkedin.com/in/rana-kaya-64aaa5333/"
+          className="text-gray-600 hover:text-blue-700 transition-colors"
+        ><Linkedin size={32} /></a>
       </div>
     </aside>
   );
