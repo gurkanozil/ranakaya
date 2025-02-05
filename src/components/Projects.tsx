@@ -1,15 +1,23 @@
 import { Github, ExternalLink } from 'lucide-react';
-import webpageScreenshot from '../images/webpage_screenshot.png';
+import portfolio from '../images/portfolio.png';
+import riseup from '../images/riseup.png';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Portfolio website',
       description: 'My portfolio website',
-      image: webpageScreenshot,
+      image: portfolio,
       tech: ['Figma', 'React'],
       github: 'https://github.com/gurkanozil/ranakaya',
       live: 'https://gurkanozil.github.io/ranakaya',
+    },{
+      title: 'RiseUp Belgium',
+      description: 'School project',
+      image: riseup,
+      tech: ['Figma', 'Vue'],
+      github: '',
+      live: 'https://riseupbelgium.netlify.app/',
     },
     //{
     //  title: 'empty',
@@ -23,14 +31,14 @@ const Projects = () => {
 
   return (
     <div className="max-w-4xl">
-      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">PROJECTS</h2>
+      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">EXPERIENCE</h2>
       <div className="grid gap-8">
         {projects.map((project) => (
           <div key={project.title} className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-64 object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-bold text-pink-500 mb-2">{project.title}</h3>

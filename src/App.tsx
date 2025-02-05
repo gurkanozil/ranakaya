@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { User, Code2, FolderKanban, Contact as ContactIcon } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -10,10 +9,10 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   const navItems = [
-    { id: 'about', label: 'About', icon: <User size={32} /> },
-    { id: 'skills', label: 'Skills', icon: <Code2 size={32} /> },
-    { id: 'projects', label: 'Projects', icon: <FolderKanban size={32} /> },
-    { id: 'contact', label: 'Contact', icon: <ContactIcon size={32} /> },
+    { id: 'about', label: 'ABOUT', },
+    { id: 'skills', label: 'SKILLS' },
+    { id: 'projects', label: 'EXPERIENCE' },
+    { id: 'contact', label: 'CONTACT' },
   ];
 
   const renderContent = () => {
