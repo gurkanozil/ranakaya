@@ -15,7 +15,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="max-w-3xl">
+    <div className="mt-6 max-w-4xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
       <h2 className="text-6xl font-extrabold text-pink-500 mb-12">SKILLS</h2>
       <div className="grid gap-8">
         {skillCategories.map((category) => (
@@ -25,7 +25,7 @@ const Skills = () => {
               {category.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-medium"
+                  className="px-4 py-2 bg-blue-50 text-cyan-700 rounded-full font-bold"
                 >
                   {skill}
                 </span>

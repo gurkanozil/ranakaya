@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <div className="ml-6 max-w-2xl">
-      <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
-      <p className="text-xl font-light text-gray-600 mb-6">I'd be glad to answer your questions!</p>
+    <div className="mt-6 max-w-2xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
+      <h2 className="ml-24 text-6xl font-extrabold text-pink-500">CONTACT</h2>
+      <p className="ml-24 mb-6 text-xl font-light text-gray-600">I'd be glad to answer your questions!</p>
 
-      <div className="bg-slate-700 rounded-3xl shadow-2xl p-16 m-16">
+      <div className="bg-slate-700 rounded-3xl shadow-2xl p-8 mr-8">
         <form className="grid gap-4">
           <div>
             <input type="text"
