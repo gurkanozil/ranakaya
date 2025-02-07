@@ -26,8 +26,8 @@ const Sidebar: React.FC<SidebarProps> = ({
           alt="Profile"
           className="w-48 h-48 rounded-full object-cover shadow-2xl mb-6 duration-200 ease-in hover:scale-125 hover:mb-10 hover:mt-6"
         />
-        <h1 className="text-4xl font-extrabold text-pink-500">RANA KAYA</h1>
-        <p className="text-xl font-thin text-gray-600 tracking-widest">DIGITAL DESIGNER</p>
+        <h1 className="text-4xl font-extrabold text-pink-500 whitespace-nowrap">RANA KAYA</h1>
+        <p className="text-xl font-thin text-gray-600 whitespace-nowrap tracking-widest">DIGITAL DESIGNER</p>
       </div>
 
       <nav className="flex-1 -mt-10 flex text-center justify-center">
