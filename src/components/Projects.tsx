@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <div className="max-w-4xl">
-      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">EXPERIENCE</h2>
+      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">PROJECTS</h2>
       <div className="grid gap-8">
         {projects.map((project) => (
           <div key={project.title} className="bg-white rounded-xl shadow-2xl overflow-hidden">
@@ -54,6 +54,7 @@ const Projects = () => {
                 ))}
               </div>
               <div className="flex gap-4">
+              {project.github && (
                 <a
                   href={project.github}
                   className="flex items-center gap-2 text-gray-600 hover:text-blue-700 transition-colors"
@@ -61,6 +62,8 @@ const Projects = () => {
                   <Github size={18} />
                   <span>Code</span>
                 </a>
+              )}
+              {project.live && (
                 <a
                   href={project.live}
                   className="flex items-center gap-2 text-gray-600 hover:text-blue-700 transition-colors"
@@ -68,6 +71,7 @@ const Projects = () => {
                   <ExternalLink size={18} />
                   <span>Live Demo</span>
                 </a>
+              )}
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ function App() {
   const navItems = [
     { id: 'about', label: 'ABOUT', },
     { id: 'skills', label: 'SKILLS' },
-    { id: 'projects', label: 'EXPERIENCE' },
+    { id: 'projects', label: 'PROJECTS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
