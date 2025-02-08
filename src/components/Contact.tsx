@@ -3,13 +3,13 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
     const [state, handleSubmit] = useForm("mdkadwpo");
     if (state.succeeded) {
-        return <div className="flex flex-col text-center content-center">
+        return <div className="flex flex-col text-center content-center w-full">
           <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
           <p className="mt-6 text-xl font-light text-gray-600">Thank you for your message! It was successfully sent.</p>
           </div>;
     }
   return (
-    <div id="contactopnemen" className="flex flex-col text-center content-center">
+    <div id="contactopnemen" className="flex flex-col text-center content-center w-full">
       <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
       <p className="mb-6 text-xl font-light text-gray-600">I'd be glad to answer your questions!</p>
 
