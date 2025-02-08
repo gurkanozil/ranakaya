@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <>
-      <aside id='zijbar' className={`flex flex-col items-center md:w-1/3 min-h-screen md:h-dvw bg-slate-300 p-4 transition-transform duration-500 ease-in-out
+      <aside id='zijbar' className={`flex flex-col items-center text-center md:w-1/3 min-h-screen md:h-dvw bg-slate-300 p-4 transition-transform duration-500 ease-in-out
         ${SidebarOpen ? "translate-x-0" : "-translate-x-full hidden"}
         `}>
     
@@ -30,13 +30,13 @@ const Sidebar: React.FC<SidebarProps> = ({
           <img
             src={profileImage}
             alt="Profile"
-            className="w-48 h-48 rounded-full object-cover shadow-2xl duration-200 ease-in hover:scale-125 mb-8 hover:mt-6"
+            className="w-48 h-48 rounded-full object-cover shadow-2xl duration-200 ease-in hover:scale-125 mb-8 hover:mt-6 inline-block"
           />
           <h1 className="text-4xl font-extrabold text-pink-500 whitespace-nowrap overflow-hidden">RANA KAYA</h1>
           <p className="text-xl font-thin text-gray-600 pb-4 whitespace-nowrap tracking-widest overflow-hidden">DIGITAL DESIGNER</p>
         </div>
 
-        <nav id="navigatie" className="text-center">
+        <nav id="navigatie" className="items-center text-center">
           <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.id}>
