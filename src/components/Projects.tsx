@@ -30,8 +30,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="max-w-4xl">
-      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">PROJECTS</h2>
+    <div className="max-w-4xl ">
+      <h2 className="text-6xl font-extrabold text-center text-pink-500 mb-12">PROJECTS</h2>
       <div className="grid gap-8">
         {projects.map((project) => (
           <div key={project.title} className="bg-white rounded-xl shadow-2xl overflow-hidden">
@@ -60,7 +60,7 @@ const Projects = () => {
                   className="flex items-center gap-2 text-gray-600 hover:text-blue-700 transition-colors"
                 >
                   <Github size={18} />
-                  <span>Code</span>
+                  <span className='hover:underline'>Code</span>
                 </a>
               )}
               {project.live && (
@@ -69,7 +69,7 @@ const Projects = () => {
                   className="flex items-center gap-2 text-gray-600 hover:text-blue-700 transition-colors"
                 >
                   <ExternalLink size={18} />
-                  <span>Live Demo</span>
+                  <span className='hover:underline'>Live Demo</span>
                 </a>
               )}
               </div>

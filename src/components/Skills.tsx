@@ -16,7 +16,7 @@ const Skills = () => {
 
   return (
     <div className="mt-6 max-w-4xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
-      <h2 className="text-6xl font-extrabold text-pink-500 mb-12">SKILLS</h2>
+      <h2 className="text-6xl text-center font-extrabold text-pink-500 mb-12">SKILLS</h2>
       <div className="grid gap-8">
         {skillCategories.map((category) => (
           <div key={category.title}>

@@ -3,10 +3,14 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
     const [state, handleSubmit] = useForm("mwpvqnvl");
     if (state.succeeded) {
-        return <p>Your message has been sent!</p>;
+        return <div className="mt-6 text-center content-center max-w-4xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
+          <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
+          <p className="mt-6 text-xl font-light text-gray-600">Thank you for your message! It was successfully sent.</p>
+          </div>;
     }
   return (
-    <div className="mt-6 text-center content-center max-w-2xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
+  //<div className="mt-6 max-w-4xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
+    <div className="mt-6 text-center max-w-4xl content-center  shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
       <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
       <p className="mb-6 text-xl font-light text-gray-600">I'd be glad to answer your questions!</p>
 
