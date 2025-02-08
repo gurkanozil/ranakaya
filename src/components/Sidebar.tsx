@@ -22,27 +22,27 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <>
-      <aside id='Sidebar' className={`flex flex-col fixed md:w-1/3 min-h-screen md:h-dvw bg-slate-300 p-4 transition-transform duration-500 ease-in-out
+      <aside id='zijbar' className={`flex flex-col items-center md:w-1/3 min-h-screen md:h-dvw bg-slate-300 p-4 transition-transform duration-500 ease-in-out
         ${SidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}>
     
-        <div id="Profile" className="flex flex-col items-center">
+        <div id="profiel" className="">
           <img
             src={profileImage}
             alt="Profile"
-            className="w-48 h-48 rounded-full object-cover shadow-2xl mb-6 duration-200 ease-in hover:scale-125 hover:mb-6 hover:mt-6"
+            className="w-48 h-48 rounded-full object-cover shadow-2xl duration-200 ease-in hover:scale-125 mb-8 hover:mt-6"
           />
           <h1 className="text-4xl font-extrabold text-pink-500 whitespace-nowrap overflow-hidden">RANA KAYA</h1>
           <p className="text-xl font-thin text-gray-600 pb-4 whitespace-nowrap tracking-widest overflow-hidden">DIGITAL DESIGNER</p>
         </div>
 
-        <nav id="Nav" className="flex flex-col text-center md:justify-center md:items-center">
-          <ul className="space-y-2">
+        <nav id="navigatie" className="text-center">
+          <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => setActiveSection(item.id)}
-                  className={` font-bold text-3xl space-x-3 px-4 py-3 rounded-3xl transition-colors 
+                  className={`font-bold p-2 text-3xl rounded-3xl transition-colors 
                     ${ activeSection === item.id ? 'bg-blue-100 text-slate-700 shadow-xl' : 'text-slate-500 hover:bg-blue-100 hover:text-slate-700 hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-in-out'
                   }`}><span>{item.label}</span>
                 </button>
@@ -51,8 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </ul>
         </nav>
 
-        <div id="Contact" className="flex flex-col fixed left-1/3 right-2/3 bottom-0">
-          <div className="flex flex-row space-x-2 text-slate-600 bg-slate-300 rounded-lg bg-opacity-50 md:space-x-4 pt-2 p-1 border-t-2 border-slate-500">
+          <div id="socials" className="relative bottom-0 flex flex-row justify-evenly space-x-3">
             <a href="mailto:ranakaya@outlook.be"
               className="text-gray-600 hover:text-blue-700 hover:scale-110 transition-transform duration-300 ease-in-out"
             ><Mail size={40} /></a>
@@ -69,7 +68,6 @@ const Sidebar: React.FC<SidebarProps> = ({
               className="text-gray-600 hover:text-blue-700 hover:scale-110 transition-transform duration-300 ease-in-out"
             ><Linkedin size={40} /></a>
           </div>
-        </div>
 
       </aside>
       

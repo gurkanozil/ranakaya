@@ -9,6 +9,6 @@ createRoot(document.getElementById('root')!).render(
       <App />
     </StrictMode>
   ) : ( // if on mobile
-    <div className="flex left-0 top-0 h-screen w-full bg-slate-300 p-6 pt-48 flex text-center justify-center">This website is best viewed on desktop devices</div>
+    <div className="flex left-0 top-0 h-screen w-full bg-slate-300 p-6 pt-48 text-center justify-center">This website is best viewed on desktop devices</div>
   )
 );
