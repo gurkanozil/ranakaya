@@ -31,16 +31,18 @@ function App() {
   };
 
   return (
-    <div className="flex min-h-screen bg-white no-scrollbar">
+    <>
+    <div id="App" className="flex min-h-screen bg-white no-scrollbar">
       <Sidebar 
         activeSection={activeSection}
         setActiveSection={setActiveSection}
         navItems={navItems}
       />
-      <main className="flex-1 mr-6 shadow-2xl bg-slate-100 rounded-r-3xl p-12 mt-12 mb-12">
+      <main id="mainContent" className="flex-1 shadow-2xl bg-slate-100 rounded-r-3xl p-12 mt-12 mb-12 mr-12">
         {renderContent()}
       </main>
     </div>
+  </>
   );
 }
 

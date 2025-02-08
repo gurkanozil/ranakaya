@@ -60,7 +60,7 @@ const Projects = () => {
 
   // Don't make changes below here
   return (
-    <div alt="alt">
+    <div id="Projects">
       <h2 className="text-6xl font-extrabold text-center text-pink-500 mb-12">PROJECTS</h2>
       <div className="grid gap-8">
         {projects.map((project) => (

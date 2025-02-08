@@ -50,7 +50,7 @@ const Skills = () => {
   ];
 
   return (
-    <div alt="Skills">
+    <div id="Skills">
       <h2 className="text-6xl text-center font-extrabold text-pink-500 mb-12">SKILLS</h2>
       <div className="grid gap-8">
         {skillCategories.map((category) => (
