@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Phone, Instagram, Facebook } from 'lucide-react';
-import profileImage from '../images/ranaheadshot.jpeg';  
+import profileImage from '../images/ranaheadshot.jpeg';
 
 interface NavItem {
   id: string;
@@ -19,18 +19,18 @@ const Sidebar: React.FC<SidebarProps> = ({
   navItems,
 }) => {
   return (
-    <aside className="flex left-0 top-0 md:h-dvw md:w-1/3 bg-slate-300 p-12 flex flex-col">
-      <div className="flex flex-col items-center mb-12">
+    <aside className="flex flex-col min-h-screen left-0 top-0 md:h-dvw md:w-1/3 bg-slate-300 md:p-4">
+      <div className="flex flex-col items-center">
         <img
           src={profileImage}
           alt="Profile"
-          className="w-48 h-48 rounded-full object-cover shadow-2xl mb-6 duration-200 ease-in hover:scale-125 hover:mb-10 hover:mt-6"
+          className="w-48 h-48 rounded-full object-cover shadow-2xl mb-6 duration-200 ease-in hover:scale-125 hover:mb-10 "
         />
         <h1 className="text-4xl font-extrabold text-pink-500 whitespace-nowrap">RANA KAYA</h1>
-        <p className="text-xl font-thin text-gray-600 whitespace-nowrap tracking-widest">DIGITAL DESIGNER</p>
+        <p className="text-xl font-thin text-gray-600 pb-4 whitespace-nowrap tracking-widest">DIGITAL DESIGNER</p>
       </div>
 
-      <nav className="flex-1 -mt-10 flex text-center justify-center">
+      <nav className="flex-1 flex-auto text-center justify-center items-center overflow-scroll no-scrollbar border-2"> // vertical flexbox
         <ul className="space-y-2">
           {navItems.map((item) => (
             <li key={item.id}>
@@ -39,7 +39,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 className={` font-bold text-3xl space-x-3 px-4 py-3 rounded-3xl transition-colors ${
                   activeSection === item.id
                     ? 'bg-blue-100 text-slate-700 shadow-xl'
-                    : 'text-slate-500 hover:bg-blue-100 hover:text-slate-700'
+                    : 'text-slate-500 hover:bg-blue-100 hover:text-slate-700 hover:scale-105 transition-transform duration-200 ease-in-out'
                 }`}><span>{item.label}</span>
               </button>
             </li>
@@ -47,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         </ul>
       </nav>
 
-      <div className="flex justify-center space-x-4 pt-6 border-t border-blue-50">
+      <div className="flex justify-center space-x-4 pt-6 border-t border-blue-50 overflow-scroll no-scrollbar">
         <a href="mailto:ranakaya@outlook.be"
           className="text-gray-600 hover:text-blue-700 transition-colors"
         ><Mail size={32} /></a>

@@ -9,12 +9,11 @@ const Contact = () => {
           </div>;
     }
   return (
-  //<div className="mt-6 max-w-4xl shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
-    <div className="mt-6 text-center max-w-4xl content-center  shadow-2xl bg-slate-100 rounded-r-3xl p-12 -ml-12">
+    <div alt="Contact" className="text-center content-center">
       <h2 className="text-6xl font-extrabold text-pink-500">CONTACT</h2>
       <p className="mb-6 text-xl font-light text-gray-600">I'd be glad to answer your questions!</p>
 
-      <div className="bg-slate-700 rounded-3xl shadow-2xl p-8">
+      <div className="bg-slate-700 rounded-3xl shadow-2xl p-8 mx-24">
         <form onSubmit={handleSubmit} className="grid gap-4">
           <div>
             <label htmlFor="name" className="sr-only">Name</label>
@@ -48,7 +47,7 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
-              rows={4}
+              rows={6}
               placeholder="Message"
               className="w-full px-4 py-2 rounded-lg border border-pink-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               required
