@@ -23,7 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   return (
     <>
       <aside id='zijbar' className={`flex flex-col items-center md:w-1/3 min-h-screen md:h-dvw bg-slate-300 p-4 transition-transform duration-500 ease-in-out
-        ${SidebarOpen ? "translate-x-0" : "-translate-x-full"}
+        ${SidebarOpen ? "translate-x-0" : "-translate-x-full hidden"}
         `}>
     
         <div id="profiel" className="">
@@ -51,7 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </ul>
         </nav>
 
-          <div id="socials" className="relative bottom-0 flex flex-row justify-evenly space-x-3">
+          <div id="socials" className="fixed bottom-0 left-0 right-0 flex flex-row justify-evenly space-x-3 bg-slate-300 bg-opacity-25 p-4">
             <a href="mailto:ranakaya@outlook.be"
               className="text-gray-600 hover:text-blue-700 hover:scale-110 transition-transform duration-300 ease-in-out"
             ><Mail size={40} /></a>

@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-    <div id="home" className={` flex no-scrollbar`}>
+    <div id="home" className={`${SidebarOpen ? 'flex' : 'md:w-full'} no-scrollbar`}>
       <Sidebar 
         activeSection={activeSection}
         setActiveSection={setActiveSection}
@@ -48,7 +48,7 @@ function App() {
         SidebarOpen={SidebarOpen}
         toggleSidebar={toggleSidebar} />
       
-      <main id="algemeen" className={`flex-1 shadow-2xl bg-slate-100 ${SidebarOpen ? 'rounded-r-3xl' : 'rounded-3xl'} p-14 transition-transform duration-500 ease-in-out  ${SidebarOpen ? 'ml-0' : 'ml-12'} mt-12 mb-12 mr-12`}>
+      <main id="algemeen" className={`${SidebarOpen ? 'flex-1' : 'flex'} shadow-2xl bg-slate-100 ${SidebarOpen ? 'rounded-r-3xl' : 'rounded-3xl'} p-14 transition-transform duration-500 ease-in-out  ${SidebarOpen ? 'ml-0 mt-12 mb-12 mr-12 ' : 'm-12'}`}>
         {renderContent()}
         <button
             id="toggleSidebar"

@@ -60,11 +60,11 @@ const Projects = () => {
 
   // Don't make changes below here
   return (
-    <div id="projecten">
+    <div id="projecten" className='w-full'>
       <h2 className="text-6xl font-extrabold text-center text-pink-500 mb-12">PROJECTS</h2>
       <div className="grid gap-8">
         {projects.map((project) => (
-          <div key={project.title} className="bg-white rounded-xl shadow-2xl overflow-hidden">
+          <div key={project.title} className="bg-slate-100 rounded-xl shadow-2xl">
             {project.image && project.title && ( //if image and title exist
               project.live ? ( // if live link exists, make the image clickable
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
