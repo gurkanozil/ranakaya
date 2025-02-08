@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="flex min-h-screen bg-white">
+    <div className="flex min-h-screen bg-white no-scrollbar">
       <Sidebar 
         activeSection={activeSection}
         setActiveSection={setActiveSection}
