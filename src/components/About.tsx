@@ -4,7 +4,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ setActiveSection }) => {
   return (
-    <div id="About">
+    <div id="About" className="flex flex-col">
       <h1 className="text-8xl font-extrabold text-pink-500">KAYA</h1>
       <h1 className="text-9xl font-extrabold -mt-6 -ml-1 text-pink-500">RANA</h1>
       <p className="text-2xl text-gray-600 font-thin whitespace-nowrap tracking-widest">DIGITAL DESIGNER</p>

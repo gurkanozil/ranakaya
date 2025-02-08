@@ -50,16 +50,17 @@ const Skills = () => {
   ];
 
   return (
-    <div id="Skills">
+    <div id="Skills" className='flex-1'>
       <h2 className="text-6xl text-center font-extrabold text-pink-500 mb-12">SKILLS</h2>
+      
       <div className="grid gap-8">
         {skillCategories.map((category) => (
           <div key={category.title}>
             <h3 className="text-2xl font-bold text-pink-500 mb-4">{category.title}</h3>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex gap-2">
               {category.skills.map((skill) => (
                 <span
-                  key={skill}
+                  key="skill"
                   className="flex flex-row px-4 py-1 bg-gray-100 text-gray-600 rounded-xl text-md font-bold"
                   >
                   {skill}

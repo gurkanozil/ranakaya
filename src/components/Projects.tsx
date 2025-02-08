@@ -98,7 +98,7 @@ const Projects = () => {
               <div className="flex flex-wrap gap-1 mb-4">
                 {project.tech && project.tech.length > 0 && project.tech.map((tech) => ( //show tech if it exists
                   <span
-                    key={tech}
+                    key="tech"
                     className="flex flex-row px-4 py-1 bg-gray-100 text-gray-600 rounded-xl text-md tracking-wide"
                   >
                     {tech}
