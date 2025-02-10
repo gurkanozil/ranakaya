@@ -10,6 +10,7 @@ import react from '../images/icons/react.svg';
 import vue from '../images/icons/vue.svg';
 import netlify from '../images/icons/netlify.svg';
 import vercel from '../images/icons/vercel.svg';
+import vite from '../images/icons/vite.svg';
 import tailwindcss from '../images/icons/tailwindcss.svg';
 import bootstrap from '../images/icons/bootstrap.svg';
 
@@ -26,8 +27,9 @@ const Projects = () => {
       <><img src={figma} alt="Figma" className="w-6 h-6 mr-1" /><p>Figma</p></>,
       <><img src={react} alt="React" className="w-6 h-6 mr-1" /><p>React</p></>,
       <><img src={tailwindcss} alt="Tailwind" className="w-6 h-6 mr-1" /><p>TailwindCSS</p></>,
-      <><img src={vercel} alt="Github" className="w-6 h-6 mr-1" /><p>Vercel</p></>,
-      <><img src={netlify} alt="Github" className="w-6 h-6 mr-1" /><p>Netlify</p></>
+      <><img src={vercel} alt="Vercel" className="w-6 h-6 mr-1" /><p>Vercel</p></>,
+      <><img src={netlify} alt="Netlify" className="w-6 h-6 mr-1" /><p>Netlify</p></>,
+      <><img src={vite} alt="Vite" className="w-6 h-6 mr-1" /><p>Vite</p></>
     ],
       code: 'https://github.com/gurkanozil/ranakaya'
     },
