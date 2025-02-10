@@ -1,8 +1,11 @@
 # Rana Kaya Portfolio/CV
 
 Welcome to the Rana Kaya Portfolio project. This is a portfolio website showcasing Rana Kaya's work, skills, and contact information.
-The website is designed by Rana in Figma, and built by me using React.
-To visit the website go to https://gurkanozil.github.io/ranakaya
+The website is designed by Rana in Figma, and built by me using Vite, React.js and TailwindCSS.
+To visit the website go to:
+https://gurkanozil.github.io/ranakaya or
+https://ranakaya.vercel.app/ or
+https://ranakaya.netlify.app/
 
 ## Table of Contents
 
