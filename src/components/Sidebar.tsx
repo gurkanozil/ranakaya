@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <button
                   onClick={() => setActiveSection(item.id)}
                   className={`font-bold p-2 text-3xl rounded-3xl transition-colors 
-                    ${ activeSection === item.id ? 'bg-blue-100 text-slate-700 shadow-xl' : 'text-slate-500 hover:bg-blue-100 hover:text-slate-700 hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-in-out'
+                    ${ activeSection === item.id ? 'text-slate-700' : 'text-slate-500 hover:text-slate-700 hover:scale-110 transition-transform duration-300 ease-in-out'
                   }`}><span>{item.label}</span>
                 </button>
               </li>
