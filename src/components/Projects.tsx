@@ -26,7 +26,7 @@ const Projects = () => {
       <><img src={figma} alt="Figma" className="w-6 h-6 mr-1" /><p>Figma</p></>,
       <><img src={react} alt="React" className="w-6 h-6 mr-1" /><p>React</p></>,
       <><img src={tailwindcss} alt="Tailwind" className="w-6 h-6 mr-1" /><p>TailwindCSS</p></>,
-      <><img src={vercel} alt="Github" className="w-6 h-6 mr-1" /><p>Vercel</p></>
+      <><img src={vercel} alt="Github" className="w-6 h-6 mr-1" /><p>Vercel</p></>,
       <><img src={netlify} alt="Github" className="w-6 h-6 mr-1" /><p>Netlify</p></>
     ],
       code: 'https://github.com/gurkanozil/ranakaya'
