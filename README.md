@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b2c82cde-7edb-4a49-a4c5-9272111018e8/deploy-status)](https://app.netlify.com/sites/ranakaya/deploys)
+![Vercel Status](https://deploy-badge.vercel.app/vercel/ranakaya)
+
 # Rana Kaya Portfolio/CV
 
 Welcome to the Rana Kaya Portfolio project. This is a portfolio website showcasing Rana Kaya's work, skills, and contact information.
