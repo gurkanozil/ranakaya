@@ -9,7 +9,7 @@ import figma from '../images/icons/figma.svg';
 import react from '../images/icons/react.svg';
 import vue from '../images/icons/vue.svg';
 import netlify from '../images/icons/netlify.svg';
-import github from '../images/icons/github.svg';
+import vercel from '../images/icons/vercel.svg';
 import tailwindcss from '../images/icons/tailwindcss.svg';
 import bootstrap from '../images/icons/bootstrap.svg';
 
@@ -18,18 +18,18 @@ const Projects = () => {
     {
       title: 'Portfolio Website',
       description: (<>
-        This website was designed by me in Figma and developed by <a className='font-bold hover:underline' href="https://gurkanozil.github.io/">G.M. Özil</a> using React.js and TailwindCSS.<br />
-        It's hosted on Github Pages. Below you can find the source code.
+        This website was designed by me in Figma and developed by <a className='font-bold hover:underline' href="https://gurkanozil.github.io/">G.M. Özil</a> using Vite, React.js and TailwindCSS.<br />
+        It's currently hosted on Vercel and Netlify. Below you can find the source code.
       </>),
       image: portfolio,
       tech: [
       <><img src={figma} alt="Figma" className="w-6 h-6 mr-1" /><p>Figma</p></>,
       <><img src={react} alt="React" className="w-6 h-6 mr-1" /><p>React</p></>,
       <><img src={tailwindcss} alt="Tailwind" className="w-6 h-6 mr-1" /><p>TailwindCSS</p></>,
-      <><img src={github} alt="Github" className="w-6 h-6 mr-1" /><p>Github Pages</p></>
+      <><img src={vercel} alt="Github" className="w-6 h-6 mr-1" /><p>Vercel</p></>
+      <><img src={netlify} alt="Github" className="w-6 h-6 mr-1" /><p>Netlify</p></>
     ],
-      code: 'https://github.com/gurkanozil/ranakaya',
-      live: 'https://gurkanozil.github.io/ranakaya',
+      code: 'https://github.com/gurkanozil/ranakaya'
     },
     {
       title: 'Rise Up Belgium',
